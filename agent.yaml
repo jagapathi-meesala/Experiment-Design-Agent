@@ -1,0 +1,23 @@
+spec_version: "0.1.0"
+name: experiment-design-agent
+version: 1.0.0
+description: A framework-independent agent for designing rigorous experiments, power calculations, randomization plans, and analysis plans.
+author: Agent Passport Project
+license: MIT
+skills:
+  - experimental-design
+  - power-analysis
+  - analysis-plan
+tools:
+  - design-experiment
+  - calculate-power
+  - generate-analysis-plan
+tags:
+  - experimentation
+  - statistics
+  - research
+  - experimental-design
+metadata:
+  domain: experiment-design
+  implementation: python
+  framework_independent: true

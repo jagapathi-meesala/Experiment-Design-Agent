@@ -1,0 +1,17 @@
+name: calculate-power
+description: Calculate approximate sample size for a two-group standardized mean difference.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    standardized_effect: {type: number}
+    alpha: {type: number}
+    power: {type: number}
+    allocation_ratio: {type: number}
+  required: [standardized_effect, alpha, power]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: calculate_power.py
+  runtime: python3

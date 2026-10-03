@@ -1,0 +1,20 @@
+name: design-experiment
+description: Create a structured randomized parallel-group experiment design.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    title: {type: string}
+    objective: {type: string}
+    primary_outcome: {type: string}
+    groups:
+      type: array
+      items: {type: string}
+    allocation: {type: string, enum: [equal]}
+  required: [title, objective, primary_outcome, groups]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: design_experiment.py
+  runtime: python3
